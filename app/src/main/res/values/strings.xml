@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kisanhub</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Kisanhub Assigment</string>
+    <string name="nav_header_subtitle">by Prashant Mhetre</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="assigment_first">Assigment First</string>
+    <string name="assigment_second">Assigment Second</string>
+    <string name="assigment_third">Assigment Third</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_key">AIzaSyA5FZ6JSHIGtqfYl_JcUk7eWzeCHgwI3xw</string>
+    <string name="please_wait">please wait</string>
+    <string name="no_internet">Internet connection is not available</string>
+</resources>
