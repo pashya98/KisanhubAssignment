@@ -1,4 +1,4 @@
-package com.kisanhub.assignment.view.Dashboard
+package com.kisanhub.assignment.view.dashboard
 
 import android.os.Bundle
 import android.support.design.widget.NavigationView
@@ -8,16 +8,12 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.kisanhub.assignment.R
-import com.kisanhub.assignment.view.Dashboard.firstassignment.FirstFragment
-import com.kisanhub.assignment.view.Dashboard.secondassignment.SecondFragment
-import com.kisanhub.assignment.view.Dashboard.thirdassignment.ThirdFragment
+import com.kisanhub.assignment.view.dashboard.secondassignment.SecondFragment
+import com.kisanhub.assignment.view.dashboard.thirdassignment.ThirdFragment
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import kotlinx.android.synthetic.main.app_bar_dashboard.*
 
-class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener,
-        FirstFragment.OnFirstFragmentInteractionListener,
-        SecondFragment.OnSecondFragmentInteractionListener,
-        ThirdFragment.OnThirdFragmentInteractionListener {
+class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,14 +38,9 @@ class DashboardActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
         }
     }
 
-
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         var fragment: Fragment? = null
         when (item.itemId) {
-            R.id.nav_first -> {
-                fragment = FirstFragment()
-            }
             R.id.nav_second -> {
                 fragment = SecondFragment()
             }

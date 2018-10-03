@@ -16,4 +16,15 @@
     <string name="google_maps_key">AIzaSyA5FZ6JSHIGtqfYl_JcUk7eWzeCHgwI3xw</string>
     <string name="please_wait">please wait</string>
     <string name="no_internet">Internet connection is not available</string>
+
+    <string name="authors">Authors</string>
+    <string name="status">Published</string>
+    <string name="type">Type</string>
+    <string name="date">Date</string>
+    <string name="region">Region</string>
+    <string name="dash">-</string>
+    <string name="place_holder">loading</string>
+    <string name="subscription">Subscription</string>
+    <string name="subscription_package">Subscription Package</string>
+    <string name="subscription_package_not">Subscription package not available</string>
 </resources>

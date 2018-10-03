@@ -15,13 +15,4 @@
 
     </group>
 
-    <item android:title="Incomplete">
-        <menu>
-            <item
-                android:id="@+id/nav_first"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Assignment First" />
-        </menu>
-    </item>
-
 </menu>

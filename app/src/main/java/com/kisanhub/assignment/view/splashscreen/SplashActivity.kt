@@ -4,14 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
-import com.kisanhub.assignment.view.Dashboard.DashboardActivity
+import com.kisanhub.assignment.view.dashboard.DashboardActivity
 
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         // setContentView(R.layout.splash)
-      //  setTimeDelay()
+        setTimeDelay()
     }
 
     private fun setTimeDelay() {
