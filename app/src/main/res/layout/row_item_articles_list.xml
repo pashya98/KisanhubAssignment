@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_title"
                 android:textSize="12sp"
-                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
                 android:maxLines="3"
                 android:ellipsize="end"/>
 
@@ -131,7 +131,7 @@
                 android:layout_height="0.5dp"
                 android:background="@color/colorGray"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginBottom="5dp"
                 android:layout_below="@+id/ll_profile"/>
 
             <LinearLayout
@@ -228,7 +228,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
                 android:background="@color/colorGray"
-                android:layout_marginTop="6dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
                 android:layout_below="@+id/ll_date"/>
 
@@ -294,7 +294,7 @@
                 </RelativeLayout>
             </LinearLayout>
 
-            <Button
+            <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btn_subscription_package"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"

@@ -38,8 +38,13 @@ class ArticlesAdapter(private val context: Activity, private val articlesList: L
     override fun onBindViewHolder(holder: ArticlesViewHolder, position: Int) {
         val articles = articlesList.get(position)
         holder.title.setText(articles.title)
-        holder.description.setText(articles.description)
-        Log.i("Data:", articlesList.toString())
+        if (articles.description.isNotEmpty()) {
+            holder.description.visibility = VISIBLE
+            holder.description.setText(articles.description)
+        } else {
+            holder.description.visibility = GONE
+        }
+
         holder.published.setText(articles.publish_date_readable)
         holder.created.setText(articles.created_readable)
         holder.type.setText(articles.article_type_fk)
@@ -59,13 +64,13 @@ class ArticlesAdapter(private val context: Activity, private val articlesList: L
             setImages(holder.image, articles.featured_image.get(0).image_file)
         }
 
-        if(articles.region_list!!.isNotEmpty()){
+        if (articles.region_list!!.isNotEmpty()) {
             holder.region.setText(articles.region_list.get(0).name)
         }
 
-        if(articles.get_status_display=="Published"){
+        if (articles.get_status_display == "Published") {
             holder.status.visibility = VISIBLE
-        }else{
+        } else {
             holder.status.visibility = GONE
         }
 
@@ -105,8 +110,8 @@ class ArticlesAdapter(private val context: Activity, private val articlesList: L
         var type = itemView.tv_type
         var date = itemView.tv_date
         var subscription = itemView.btn_subscription_package
-        var region=itemView.tv_region
-        var status=itemView.tv_status
+        var region = itemView.tv_region
+        var status = itemView.tv_status
     }
 
     interface OnShowArticlesDetails {
